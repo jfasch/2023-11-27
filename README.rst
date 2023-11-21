@@ -11,7 +11,7 @@ Checkout and Initialization
 
    $ cd ~/My-Projects                      # <--- or wherever you like
    $ git clone https://github.com/jfasch/2023-11-27.git
-   $ cd ~/2023-11-27
+   $ cd ~/My-Projects/2023-11-27
    $ git submodule init
    $ git submodule update
 
