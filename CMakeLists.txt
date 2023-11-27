@@ -7,10 +7,12 @@ TARGET_LINK_LIBRARIES(hello-first hello)
 ADD_EXECUTABLE(hello-second hello-second.c)
 TARGET_LINK_LIBRARIES(hello-second hello)
 
+ADD_EXECUTABLE(hello-dlopen hello-dlopen.c)
+
 ADD_LIBRARY(
   hello
 
-#  SHARED
+  # SHARED
 
   hello.c
   hello-name.c
