@@ -7,3 +7,8 @@ TARGET_LINK_LIBRARIES(hello-second hello)
 INSTALL(TARGETS hello-second DESTINATION bin)
 
 ADD_EXECUTABLE(hello-dlopen hello-dlopen.c)
+
+IF (MOSQUITTO_FOUND)
+  ADD_EXECUTABLE(mosquitto-publish-demo mosquitto-publish-demo.cpp)
+  TARGET_LINK_LIBRARIES(mosquitto-publish-demo Mosquitto::Mosquitto)
+ENDIF()

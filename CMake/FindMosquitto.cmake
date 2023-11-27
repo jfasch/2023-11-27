@@ -14,8 +14,6 @@ FIND_PACKAGE_HANDLE_STANDARD_ARGS(
   REQUIRED_VARS Mosquitto_LIBRARY Mosquitto_INCLUDE_DIR
 )
 
-MESSAGE(STATUS "libmosquitto include dir: ${Mosquitto_INCLUDE_DIR}")
-MESSAGE(STATUS "libmosquitto: ${Mosquitto_LIBRARY}")
 SET(Mosquitto_LIBRARIES ${Mosquitto_LIBRARY})
 
 MARK_AS_ADVANCED(Mosquitto_INCLUDE_DIR Mosquitto_LIBRARY)
