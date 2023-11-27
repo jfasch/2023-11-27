@@ -1,6 +1,4 @@
-#include <boiling-pot.h>
-#include <sensor-mock.h>
-#include <switch-mock.h>
+#include "boiling-pot.h"
 #include <hysteresis.h>
 
 BoilingPot::BoilingPot(
