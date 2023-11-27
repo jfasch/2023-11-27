@@ -1,0 +1,13 @@
+ADD_LIBRARY(
+  hello
+
+  SHARED
+
+  hello.c
+  hello-name.c
+)
+TARGET_INCLUDE_DIRECTORIES(hello PUBLIC .)
+SET_PROPERTY(TARGET hello PROPERTY VERSION 1)
+
+INSTALL(TARGETS hello DESTINATION lib)
+INSTALL(FILES hello.h hello-name.h DESTINATION include)

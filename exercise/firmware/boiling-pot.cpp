@@ -1,6 +1,5 @@
 #include <boiling-pot.h>
 #include <sensor-w1.h>
-#include <switch-mock.h>
 #include <sysfs-switch.h>
 
 #include <iostream>
