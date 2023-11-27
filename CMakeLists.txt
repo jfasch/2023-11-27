@@ -8,8 +8,12 @@ ADD_EXECUTABLE(hello-second hello-second.c)
 TARGET_LINK_LIBRARIES(hello-second hello)
 
 ADD_LIBRARY(
-  hello 
+  hello
+
+#  SHARED
 
   hello.c
   hello-name.c
 )
+
+SET_PROPERTY(TARGET hello PROPERTY VERSION 1)
